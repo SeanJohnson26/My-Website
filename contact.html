@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sean Johnson Ministry</title>
+  <meta name="description" content="Get in touch with Sean Johnson — campus minister at Awakening Collegiate Fellowship in Milledgeville, GA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="nav-brand">
+      <a href="index.html">Sean Johnson</a>
+      <span class="nav-subtitle">Ministry</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="give.html">Give</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1>Get in Touch</h1>
+  <p>Questions, prayer requests, want to connect — I'd love to hear from you.</p>
+</div>
+
+<section>
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Contact info -->
+      <div>
+        <h2>Let's Connect</h2>
+        <p style="color:var(--text-light);margin-bottom:2rem;">Whether you want to pray for the ministry, ask about giving, or just say hi — reach out. I try to respond to everyone.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">&#9993;&#65039;</div>
+            <div class="ci-text">
+              <h4>Email</h4>
+              <a href="mailto:sean@example.com">sean@example.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#128205;</div>
+            <div class="ci-text">
+              <h4>Based In</h4>
+              <p>Milledgeville, GA &mdash; Georgia College &amp; State University</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#128247;</div>
+            <div class="ci-text">
+              <h4>Instagram</h4>
+              <a href="https://instagram.com/" target="_blank" rel="noopener">@seanjohnson_acf</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="ci-icon">&#128172;</div>
+            <div class="ci-text">
+              <h4>Facebook</h4>
+              <a href="https://facebook.com/" target="_blank" rel="noopener">Sean Johnson Ministry</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;background:var(--amber-pale);border-radius:var(--radius);padding:1.5rem 1.75rem;border:1px solid rgba(232,149,42,0.2);">
+          <p style="margin:0;font-size:0.96rem;"><strong>Interested in giving?</strong> Head to the <a href="give.html">Give page</a> for all the ways you can partner with this ministry financially.</p>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div>
+        <h2>Send a Message</h2>
+        <p style="color:var(--text-light);margin-bottom:1.5rem;">Fill out this form and I'll get back to you as soon as I can.</p>
+
+        <!-- Replace the action URL below with your Formspree endpoint: https://formspree.io/f/YOUR_ID -->
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message &#8594;</button>
+        </form>
+        <p style="color:var(--text-light);font-size:0.83rem;margin-top:0.75rem;">
+          Your message is sent securely via Formspree. I typically respond within a couple days.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">Sean Johnson</div>
+    <p class="footer-tagline">Walking alongside students toward Jesus</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="newsletter.html">Newsletter</a>
+      <a href="give.html">Give</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Sean Johnson &middot; Awakening Collegiate Fellowship &middot; Milledgeville, GA</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
