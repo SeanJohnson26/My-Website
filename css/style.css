@@ -278,7 +278,7 @@ section { padding: 4.5rem 0; }
 }
 
 .profile-photo {
-  width: 200px; height: 200px;
+  width: 240px; height: 240px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -288,6 +288,16 @@ section { padding: 4.5rem 0; }
 }
 
 .about-intro .profile-photo { margin: 0 auto; }
+
+.profile-photo-rect {
+  width: 280px; height: 340px;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center top;
+  border: 5px solid var(--amber);
+  display: block;
+  margin: 0 auto;
+}
 
 .photo-placeholder {
   width: 200px; height: 200px;
