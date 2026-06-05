@@ -290,11 +290,12 @@ section { padding: 4.5rem 0; }
 .about-intro .profile-photo { margin: 0 auto; }
 
 .profile-photo-rect {
-  width: 280px; height: 340px;
-  border-radius: 14px;
+  width: 240px; height: 295px;
+  border-radius: 12px;
   object-fit: cover;
   object-position: center top;
   border: 5px solid var(--amber);
+  box-shadow: 0 6px 24px rgba(30, 58, 95, 0.18);
   display: block;
   margin: 0 auto;
 }
