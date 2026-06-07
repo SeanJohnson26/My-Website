@@ -549,6 +549,14 @@ footer {
 .footer-nav a { color: rgba(255,255,255,0.6); padding: 0.2rem 0.6rem; font-size: 0.88rem; }
 .footer-nav a:hover { color: var(--amber-light); text-decoration: none; }
 
+footer .footer-verse {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  max-width: 520px;
+  margin: 0 auto 1.1rem;
+  line-height: 1.6;
+}
 footer .footer-copy { font-size: 0.82rem; opacity: 0.55; }
 
 /* ---- Utility ---- */
