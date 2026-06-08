@@ -45,14 +45,15 @@ def main():
         with open(os.path.join(NEWSLETTERS_DIR, filename), encoding="utf-8") as f:
             content = f.read()
         fm, body = parse_frontmatter(content)
-        entries.append(
-            {
-                "slug": slug,
-                "title": fm.get("title", slug.replace("-", " ").title()),
-                "date": fm.get("date", "1970-01-01"),
-                "excerpt": fm.get("excerpt", plain_excerpt(body)),
-            }
-        )
+        entry = {
+            "slug": slug,
+            "title": fm.get("title", slug.replace("-", " ").title()),
+            "date": fm.get("date", "1970-01-01"),
+            "excerpt": fm.get("excerpt", plain_excerpt(body)),
+        }
+        if fm.get("coming_soon", "").lower() == "true":
+            entry["coming_soon"] = True
+        entries.append(entry)
 
     entries.sort(key=lambda x: x["date"], reverse=True)
 
