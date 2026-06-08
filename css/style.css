@@ -429,6 +429,11 @@ section { padding: 4.5rem 0; }
 .nl-body a { color: var(--amber); }
 .nl-body strong { color: var(--navy); }
 
+.nl-coming-badge { vertical-align: middle; font-size: 0.68rem; padding: 0.18rem 0.55rem; letter-spacing: 0.12em; }
+
+.btn-disabled { background: #D1D5DB; color: #9CA3AF; cursor: not-allowed; pointer-events: none; }
+.btn-disabled:hover { transform: none; box-shadow: none; }
+
 /* ---- Give ---- */
 .give-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
 

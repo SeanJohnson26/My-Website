@@ -53,6 +53,21 @@
 
         var html = list.map(function (nl) {
           var my = monthYear(nl.date);
+          if (nl.coming_soon) {
+            return (
+              '<div class="nl-card">' +
+                '<div class="nl-date-chip">' +
+                  '<div class="nl-month">' + escHtml(my.month) + '</div>' +
+                  '<div class="nl-year">' + escHtml(my.year) + '</div>' +
+                '</div>' +
+                '<div class="nl-meta">' +
+                  '<h3>' + escHtml(nl.title) + ' <span class="tag nl-coming-badge">COMING SOON</span></h3>' +
+                  '<p class="nl-excerpt">' + escHtml(nl.excerpt || '') + '</p>' +
+                  '<span class="btn btn-sm btn-disabled" aria-disabled="true">Coming Soon</span>' +
+                '</div>' +
+              '</div>'
+            );
+          }
           return (
             '<div class="nl-card">' +
               '<div class="nl-date-chip">' +
