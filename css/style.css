@@ -69,6 +69,10 @@ nav {
   gap: 0.65rem;
 }
 
+.nav-brand img {
+  height: 1.35rem;
+}
+
 .nav-divider {
   width: 1px;
   height: 1.2rem;
