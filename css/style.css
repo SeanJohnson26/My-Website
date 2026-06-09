@@ -299,7 +299,7 @@ section { padding: 4.5rem 0; }
 .about-intro .profile-photo { margin: 0 auto; }
 
 .profile-photo-rect {
-  width: 240px; height: 295px;
+  width: 320px; height: 395px;
   border-radius: 12px;
   object-fit: cover;
   object-position: center top;
