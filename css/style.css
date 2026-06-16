@@ -445,17 +445,10 @@ section { padding: 4.5rem 0; }
 
 .about-intro .profile-photo { margin: 0 auto; }
 
-.intro-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-}
-
 @media (max-width: 768px) {
   .intro-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
   }
   .intro-grid .text-center {
     order: -1;
