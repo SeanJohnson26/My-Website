@@ -445,6 +445,23 @@ section { padding: 4.5rem 0; }
 
 .about-intro .profile-photo { margin: 0 auto; }
 
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .intro-grid .text-center {
+    order: -1;
+  }
+}
+
 .profile-photo-rect {
   width: 320px; height: 395px;
   border-radius: 12px;
