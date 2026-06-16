@@ -100,6 +100,35 @@
   </div>
 </section>
 
+<!-- ── PHOTO CAROUSEL ── replace images/placeholder-*.jpg with real photos ── -->
+<section class="section-cream" id="photos">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:2rem;">
+      <span class="tag">Life at ACF</span>
+      <h2 style="margin-top:0.75rem;">Photos</h2>
+      <hr class="divider">
+    </div>
+    <div class="coverflow-outer">
+      <button class="cf-arrow" id="cf-prev" aria-label="Previous photo">&#8592;</button>
+      <div class="coverflow-stage" id="coverflow-stage">
+        <div class="cf-slide" data-index="0"><img src="images/sean-johnson.jpg" alt="Photo 1"></div>
+        <div class="cf-slide" data-index="1"><img src="images/sean-johnson.jpg" alt="Photo 2"></div>
+        <div class="cf-slide" data-index="2"><img src="images/sean-johnson.jpg" alt="Photo 3"></div>
+        <div class="cf-slide" data-index="3"><img src="images/sean-johnson.jpg" alt="Photo 4"></div>
+        <div class="cf-slide" data-index="4"><img src="images/sean-johnson.jpg" alt="Photo 5"></div>
+      </div>
+      <button class="cf-arrow" id="cf-next" aria-label="Next photo">&#8594;</button>
+    </div>
+    <div class="cf-dots" id="cf-dots">
+      <button class="cf-dot active" data-go="0" aria-label="Photo 1"></button>
+      <button class="cf-dot" data-go="1" aria-label="Photo 2"></button>
+      <button class="cf-dot" data-go="2" aria-label="Photo 3"></button>
+      <button class="cf-dot" data-go="3" aria-label="Photo 4"></button>
+      <button class="cf-dot" data-go="4" aria-label="Photo 5"></button>
+    </div>
+  </div>
+</section>
+
 <section class="section-white" id="awakening">
   <div class="container">
     <div class="section-header" style="margin-bottom:2rem;">
@@ -151,5 +180,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
