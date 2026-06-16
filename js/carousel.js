@@ -21,17 +21,26 @@
       });
     }
 
+    var autoTimer;
+
     function goTo(n) {
       current = ((n % total) + total) % total;
       update();
     }
 
+    function startAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(function () { goTo(current + 1); }, 10000);
+    }
+
     document.getElementById('cf-prev').addEventListener('click', function () {
       goTo(current - 1);
+      startAuto();
     });
 
     document.getElementById('cf-next').addEventListener('click', function () {
       goTo(current + 1);
+      startAuto();
     });
 
     dots.forEach(function (dot) {
@@ -54,5 +63,6 @@
     });
 
     update();
+    startAuto();
   });
 })();
