@@ -104,8 +104,6 @@
         var date = parsed.fm.date || '';
         var pdf = parsed.fm.pdf || '';
         var image = parsed.fm.image || '';
-        var dateHtml = date ? '<p class="nl-read-date">' + escHtml(fmtDate(date)) + '</p>' : '';
-
         document.title = escHtml(title) + ' | Sean Johnson Ministry';
 
         var bodyHtml = pdf
@@ -119,8 +117,6 @@
             '<a href="newsletter.html" class="btn btn-navy btn-sm">&larr; All Newsletters</a>' +
           '</div>' +
           '<div class="nl-read-card">' +
-            '<h1 class="nl-read-title">' + escHtml(title) + '</h1>' +
-            dateHtml +
             bodyHtml +
           '</div>';
       })
