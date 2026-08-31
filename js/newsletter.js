@@ -103,12 +103,15 @@
         var title = parsed.fm.title || slug.replace(/-/g, ' ');
         var date = parsed.fm.date || '';
         var pdf = parsed.fm.pdf || '';
+        var image = parsed.fm.image || '';
         var dateHtml = date ? '<p class="nl-read-date">' + escHtml(fmtDate(date)) + '</p>' : '';
 
         document.title = escHtml(title) + ' | Sean Johnson Ministry';
 
         var bodyHtml = pdf
           ? '<iframe src="' + escHtml(pdf) + '" width="100%" height="900px" style="border:none;border-radius:8px;display:block;"></iframe>'
+          : image
+          ? '<img src="' + escHtml(image) + '" alt="' + escHtml(title) + '" style="width:100%;display:block;border-radius:8px;">'
           : '<div class="nl-body">' + marked.parse(parsed.body) + '</div>';
 
         container.innerHTML =
