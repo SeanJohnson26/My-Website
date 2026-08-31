@@ -1,11 +1,22 @@
 (function () {
   document.addEventListener('DOMContentLoaded', function () {
-    var slides = Array.from(document.querySelectorAll('.cf-slide'));
-    var dots   = Array.from(document.querySelectorAll('.cf-dot'));
+    var slides    = Array.from(document.querySelectorAll('.cf-slide'));
+    var dotsContainer = document.getElementById('cf-dots');
     if (!slides.length) return;
 
     var total   = slides.length;
     var current = 0;
+
+    // Generate dots dynamically so adding slides never breaks the count
+    slides.forEach(function (_, i) {
+      var btn = document.createElement('button');
+      btn.className = 'cf-dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('data-go', i);
+      btn.setAttribute('aria-label', 'Photo ' + (i + 1));
+      dotsContainer.appendChild(btn);
+    });
+
+    var dots = Array.from(dotsContainer.querySelectorAll('.cf-dot'));
 
     function update() {
       slides.forEach(function (slide, i) {
