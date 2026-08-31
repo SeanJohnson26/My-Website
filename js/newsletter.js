@@ -102,10 +102,14 @@
         var parsed = stripFrontmatter(md);
         var title = parsed.fm.title || slug.replace(/-/g, ' ');
         var date = parsed.fm.date || '';
-        var bodyHtml = marked.parse(parsed.body);
+        var pdf = parsed.fm.pdf || '';
         var dateHtml = date ? '<p class="nl-read-date">' + escHtml(fmtDate(date)) + '</p>' : '';
 
         document.title = escHtml(title) + ' | Sean Johnson Ministry';
+
+        var bodyHtml = pdf
+          ? '<iframe src="' + escHtml(pdf) + '" width="100%" height="900px" style="border:none;border-radius:8px;display:block;"></iframe>'
+          : '<div class="nl-body">' + marked.parse(parsed.body) + '</div>';
 
         container.innerHTML =
           '<div class="nl-read-back">' +
@@ -114,7 +118,7 @@
           '<div class="nl-read-card">' +
             '<h1 class="nl-read-title">' + escHtml(title) + '</h1>' +
             dateHtml +
-            '<div class="nl-body">' + bodyHtml + '</div>' +
+            bodyHtml +
           '</div>';
       })
       .catch(function () {
