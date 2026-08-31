@@ -40,7 +40,7 @@
   function showList(container) {
     container.innerHTML = '<p class="loading-msg">Loading newsletters&#8230;</p>';
 
-    fetch(BASE + 'index.json')
+    fetch(BASE + 'index.json?v=' + Date.now())
       .then(function (r) {
         if (!r.ok) throw new Error('index not found');
         return r.json();
