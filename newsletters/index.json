@@ -1,9 +1,15 @@
 [
   {
+    "slug": "2026-09-september",
+    "title": "September 2026",
+    "date": "2026-09-01",
+    "excerpt": "Check back soon for my September update.",
+    "coming_soon": true
+  },
+  {
     "slug": "2026-08-august",
     "title": "August 2026",
     "date": "2026-08-01",
-    "excerpt": "Check back soon for my first newsletter update.",
-    "coming_soon": true
+    "excerpt": "We're a month in — read all about our first week, Fresh, Awakening, and what God is doing on campus."
   }
 ]
