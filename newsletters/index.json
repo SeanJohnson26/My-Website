@@ -1,15 +1,10 @@
 [
   {
-    "slug": "2026-08-august",
-    "title": "August 2026",
-    "date": "2026-08-01",
-    "excerpt": "We're a month in — read all about our first week, Fresh, Awakening, and what God is doing on campus."
-  },
-  {
-    "slug": "2026-09-september",
-    "title": "September 2026",
-    "date": "2026-09-01",
-    "excerpt": "Fresh moves to The Depot, a Labor Day cookout, Frampus worship and prayer night, the launch of Alpha, and more from a busy month on campus."
+    "slug": "2026-11-november",
+    "title": "November 2026",
+    "date": "2026-11-01",
+    "excerpt": "Check back soon for my November update.",
+    "coming_soon": true
   },
   {
     "slug": "2026-10-october",
@@ -19,10 +14,15 @@
     "coming_soon": true
   },
   {
-    "slug": "2026-11-november",
-    "title": "November 2026",
-    "date": "2026-11-01",
-    "excerpt": "Check back soon for my November update.",
-    "coming_soon": true
+    "slug": "2026-09-september",
+    "title": "September 2026",
+    "date": "2026-09-01",
+    "excerpt": "Fresh moves to The Depot, a Labor Day cookout, Frampus worship and prayer night, the launch of Alpha, and more from a busy month on campus."
+  },
+  {
+    "slug": "2026-08-august",
+    "title": "August 2026",
+    "date": "2026-08-01",
+    "excerpt": "We're a month in — read all about our first week, Fresh, Awakening, and what God is doing on campus."
   }
 ]
