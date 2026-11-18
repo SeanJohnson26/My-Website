@@ -55,7 +55,7 @@ def main():
             entry["coming_soon"] = True
         entries.append(entry)
 
-    entries.sort(key=lambda x: x["date"], reverse=True)
+    entries.sort(key=lambda x: x["date"])
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(entries, f, indent=2, ensure_ascii=False)
